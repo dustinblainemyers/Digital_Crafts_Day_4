@@ -116,25 +116,27 @@
 
 # so I need to take the first indice of the first list and add it to the first indice of the first list on the accompying nested list.  Then take the second indice of the first list and add it to second indice of accompying nested list.
 
-matrix1 = [[1, 3], [2,4],[5,4],[7,3]]
-matrix2 = [[5,2],[1,0],[2,3],[7,9]]
+matrix1 = [[1, 3], [2,4],[5,6]]
+matrix2 = [[5,2],[1,0],[7,8]]
 
-matrix_dimen = 4
+matrix_leng = 2
+matrix_width = 3
 new_matrix = []
 
 
-for dimen in range(matrix_dimen):
+for dimen in range(matrix_width):
   new_matrix.insert(dimen, [])
-  for num in range(matrix_dimen):
+  print(dimen)
+  
+  for num in range(matrix_leng):
+    print(new_matrix)
     
-    
-     new_matrix[num].insert(dimen, (matrix1[dimen][num] + matrix2[dimen][num]))
+    new_matrix[dimen].insert(num, (matrix1[dimen][num] + matrix2[dimen][num]))
     
 
   
 
 print(new_matrix)
-   
 
 
  
